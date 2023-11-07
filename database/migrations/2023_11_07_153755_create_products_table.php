@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->integer('stock');
             $table->double('price', 8, 2);
+            $table->integer('is_deleted');
             $table->timestamps();
         });
     }
